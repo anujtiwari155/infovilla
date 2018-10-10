@@ -1,0 +1,104 @@
+	.typeahead, .tt-query, .tt-hint {
+		border: 1px solid #CCCCCC;
+		
+		border-style: solid;
+		font-size: 22px;
+		height: 37px;
+		border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(245, 245, 245, 0.84) rgba(255, 255, 255, 0);
+		line-height: 30px;
+		outline: medium none;
+		/*color: #FFFFFF;*/
+		padding: 8px 6px;
+		width: 450px;
+	}
+	.typeahead {
+		background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0);
+	}
+	
+	.tt-query {
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	}
+	.tt-hint {
+		color: #dcdcdc;
+	}
+	.tt-menu {
+		background-color: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 8px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		
+		padding: 8px 0;
+		width: 422px;
+	}
+	@media (min-width: 1200px){
+		.tt-menu {
+			width:600px;
+		}
+	}
+	.tt-suggestion {
+		font-size: 15px;  
+		padding: 3px 20px;
+	}
+	.tt-suggestion:hover {
+		cursor: pointer;
+		background-color: #0097CF;
+		color: #FFFFFF;
+	}
+	.tt-suggestion p {
+		margin: 0;
+	}	input.btn.searchicon {
+    font-size: 24px;
+    color: #fff;
+    background: rgba(255, 248, 220, 0);
+}
+
+input.form-control.typeahead1.tt-input {
+    width: 600px;
+}
+input.form-control.typeahead1.tt-input {
+    background-color: #000;
+}
+input.form-control.typeahead1.tt-hint {
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(22, 12, 7);
+}
+
+@media (max-width: 767px){
+	input.form-control.typeahead1.tt-input {
+	    width: 254px;
+	}
+
+	.input-group .form-control {
+	    width: 100%;
+	}
+
+	body {
+	    
+	    line-height: 1;
+	}
+
+		button.brand.navbar-toggle.collapsed {
+	    padding: 12px 9px;
+	}
+}
+@media (max-width: 1199px){
+.navbar-right {
+
+    margin-left: 36px;
+	}
+}
+
+@media (max-width: 991px){
+.tm_custom_block {
+    display: none;
+	}
+}
+
+li.col-xs-12.col-md-4.item {
+	width: 32.333333%;
+}
+
+@media (max-width: 991px){
+.navbar-right {
+    margin-left: 0;
+	}
+}

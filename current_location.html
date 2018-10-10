@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+	
+	$.ajax({
+		url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBVlsQAXrdVlCsw6PhjNffS1j52XCognHE",
+		success: (response) => {
+			console.log(response);
+			$.each(response.results, function(){
+				$.each(this.address_components,function() {
+					if(this.types == 'postal_code')
+						console.log(this.long_name);
+				});
+			});
+		}
+	});
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+
+</body>
+</html>

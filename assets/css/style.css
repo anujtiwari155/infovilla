@@ -1,0 +1,61 @@
+.loader {
+  margin: auto;
+  display: none;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.cross_btn {
+    background: #dcdcdc;
+    float: right;
+    border-radius: 50%;
+    position: relative;
+    width: 15px;
+    font-size: 12px;
+    bottom: 5px;
+    right: 11px;
+    cursor: pointer;
+}
+.nopl {
+  padding-left: 0 !important;
+}
+.nopr {
+  padding-right: 0 !important;
+}
+.report_label {
+    line-height: 50px;
+    margin: 0;
+    width: 30%;
+}
+.col-md-3.box {
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px;
+    border: 1px solid #dcdcdc;
+}
+.col-md-3.box:hover {
+    box-shadow: 0px 1px 9px 1px;
+}
+.box p {
+    padding-top: 10px;
+}
+@media (min-width: 992px) {
+  .col-md-3.box {
+    width: 24%;
+  }
+}
